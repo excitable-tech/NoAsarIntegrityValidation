@@ -1,0 +1,3 @@
+*NoAsarIntegrityValidation*
+
+Universal Electron EnableEmbeddedAsarIntegrityValidation runtime patch
