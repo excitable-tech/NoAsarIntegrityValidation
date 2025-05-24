@@ -1,0 +1,46 @@
+#include "system_dll_proxy.h"
+
+#ifndef VER_H
+// prevent header inclusion 
+#define VER_H
+#endif
+
+#include <Windows.h>
+
+DECLARE_TRAMPOLINE(GetFileVersionInfoA)
+DECLARE_TRAMPOLINE(GetFileVersionInfoByHandle)
+DECLARE_TRAMPOLINE(GetFileVersionInfoExA)
+DECLARE_TRAMPOLINE(GetFileVersionInfoExW)
+DECLARE_TRAMPOLINE(GetFileVersionInfoSizeA)
+DECLARE_TRAMPOLINE(GetFileVersionInfoSizeExA)
+DECLARE_TRAMPOLINE(GetFileVersionInfoSizeExW)
+DECLARE_TRAMPOLINE(GetFileVersionInfoSizeW)
+DECLARE_TRAMPOLINE(GetFileVersionInfoW)
+DECLARE_TRAMPOLINE(VerFindFileA)
+DECLARE_TRAMPOLINE(VerFindFileW)
+DECLARE_TRAMPOLINE(VerInstallFileA)
+DECLARE_TRAMPOLINE(VerInstallFileW)
+DECLARE_TRAMPOLINE(VerLanguageNameA)
+DECLARE_TRAMPOLINE(VerLanguageNameW)
+DECLARE_TRAMPOLINE(VerQueryValueA)
+DECLARE_TRAMPOLINE(VerQueryValueW)
+
+BEGIN_INIT_METHOD(version)
+INIT_TRAMPOLINE(GetFileVersionInfoA)
+INIT_TRAMPOLINE(GetFileVersionInfoByHandle)
+INIT_TRAMPOLINE(GetFileVersionInfoExA)
+INIT_TRAMPOLINE(GetFileVersionInfoExW)
+INIT_TRAMPOLINE(GetFileVersionInfoSizeA)
+INIT_TRAMPOLINE(GetFileVersionInfoSizeExA)
+INIT_TRAMPOLINE(GetFileVersionInfoSizeExW)
+INIT_TRAMPOLINE(GetFileVersionInfoSizeW)
+INIT_TRAMPOLINE(GetFileVersionInfoW)
+INIT_TRAMPOLINE(VerFindFileA)
+INIT_TRAMPOLINE(VerFindFileW)
+INIT_TRAMPOLINE(VerInstallFileA)
+INIT_TRAMPOLINE(VerInstallFileW)
+INIT_TRAMPOLINE(VerLanguageNameA)
+INIT_TRAMPOLINE(VerLanguageNameW)
+INIT_TRAMPOLINE(VerQueryValueA)
+INIT_TRAMPOLINE(VerQueryValueW)
+END_INIT_METHOD()

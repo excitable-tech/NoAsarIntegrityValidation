@@ -179,7 +179,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="dllmain.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="fuse.c" />
+    <ClCompile Include="version.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="system_dll_proxy.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
